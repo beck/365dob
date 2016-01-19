@@ -1,0 +1,16 @@
+{
+  "jspm": {
+    "dependencies": {
+      "instafeed.js": "npm:instafeed.js@^1.4.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "bower": "^1.7.2",
+    "jspm": "^0.16.23"
+  }
+}

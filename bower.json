@@ -1,0 +1,6 @@
+{
+  "name": "365dob",
+  "devDependencies": {
+    "skeleton": "~2.0.4"
+  }
+}
