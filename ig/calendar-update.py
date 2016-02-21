@@ -9,6 +9,9 @@ from instagram.client import InstagramAPI
 from instagram.oauth2 import OAuth2Request
 from slugify import slugify
 
+igdir = os.path.join(os.path.dirname(__file__))
+pubdir = os.path.abspath(os.path.join(igdir, '..', 'public'))
+
 
 class Cache(object):
 
@@ -16,7 +19,7 @@ class Cache(object):
     def url_to_fn(cls, url):
         slug = slugify(urlparse(url).path)
         fn = slug.replace('-json', '.json')
-        return os.path.join('cache', fn)
+        return os.path.join(igdir, 'cache', fn)
 
     @classmethod
     def get(cls, url):
@@ -51,7 +54,7 @@ class API(object):
     @classmethod
     def get(cls):
         cls.use_cache()
-        with open('api.config.cson') as f:
+        with open(os.path.join(igdir, 'api.config.cson')) as f:
             config = cson.loads(f.read())
         return InstagramAPI(**config)
 
@@ -103,7 +106,7 @@ class Calendar(object):
                 if tag.name.startswith('day'):
                     calendar.add(media, tag.name)
 
-        with open('calendar.json', 'w') as f:
+        with open(os.path.join(pubdir, 'calendar.json'), 'w') as f:
             f.write(calendar.to_str())
 
 

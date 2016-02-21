@@ -14,10 +14,14 @@ System.config({
   },
 
   map: {
-    "babel": "npm:babel-core@5.8.34",
-    "babel-runtime": "npm:babel-runtime@5.8.34",
+    "babel": "npm:babel-core@5.8.35",
+    "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
-    "instafeed.js": "npm:instafeed.js@1.4.1",
+    "skeleton": "github:dhg/Skeleton@2.0.4",
+    "github:dhg/Skeleton@2.0.4": {
+      "css": "github:systemjs/plugin-css@0.1.20",
+      "normalize.css": "github:necolas/normalize.css@3.0.3"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -30,10 +34,13 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
+    "github:necolas/normalize.css@3.0.3": {
+      "css": "github:systemjs/plugin-css@0.1.20"
+    },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-runtime@5.8.34": {
+    "npm:babel-runtime@5.8.35": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:core-js@1.2.6": {
