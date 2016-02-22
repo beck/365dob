@@ -17,6 +17,7 @@ System.config({
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
+    "jwarning/json-xhr-promise": "github:jwarning/json-xhr-promise@master",
     "skeleton": "github:dhg/Skeleton@2.0.4",
     "github:dhg/Skeleton@2.0.4": {
       "css": "github:systemjs/plugin-css@0.1.20",
