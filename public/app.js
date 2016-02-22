@@ -1,6 +1,6 @@
 /*jslint esversion: 6 */
 
-import jsonXHR from 'jwarning/json-xhr-promise';
+import jsonXHR from 'json-xhr-promise';
 
 class App {
 
@@ -9,7 +9,7 @@ class App {
   }
 
   display(calendar) {
-    console.log(this, calendar);
+    document.querySelector('calendar-of-babes').days = calendar.days;
   }
 
 }

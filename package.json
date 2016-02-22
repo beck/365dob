@@ -8,7 +8,9 @@
     },
     "dependencies": {
       "json-xhr-promise": "github:jwarning/json-xhr-promise@master",
+      "polymer": "bower:polymer@^1.2.4",
       "skeleton": "bower:skeleton@^2.0.4",
+      "webcomponentsjs": "bower:webcomponentsjs@^0.7.21"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

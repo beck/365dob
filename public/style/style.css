@@ -2,13 +2,25 @@ html {
   background: url('pronouncedyou.deviantart.com/cat_lady_pattern.jpg') #6a5a5d;
 }
 
-.images {
-  display: inline-block;
-  padding: 10px 0 2px 10px;;
+calendar-of-babes {
+  float:left;
+  display:inline-block;
+  color: white;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-left: 8px;
+  box-shadow: 1px 1px 5px rgba(87, 71, 75, 0.5);
   background: #ff7982;
   border-radius: 6px;
   line-height: 0;
+  max-width: 316px;
 }
+
+@media (min-width: 603px) { calendar-of-babes { max-width: 474px; }}
+@media (min-width: 800px) { calendar-of-babes { max-width: 632px; }}
+@media (min-width: 800px) { calendar-of-babes { max-width: 632px; }}
+@media (min-width: 998px) { calendar-of-babes { max-width: 790px; }}
+@media (min-width: 1195px) {calendar-of-babes { max-width: 948px; }}
 
 h1 {
   padding-top:20px;
@@ -18,14 +30,36 @@ h1 {
 }
 
 img {
+  float:left;
   border-radius: 4px;
   margin: 0 8px 8px 0;
 }
 
-#gettoken-wrap {
-  padding: 5px 10px 5px 5px;
+.day {
+  float: left;
+  border-radius: 4px;
+  display: inline-block;
+  background: #57474B;
+  height: 150px;
+  width: 150px;
+  font-size: 3rem;
+  text-align: right;
+  vertical-align:top;
+  margin: 0 8px 8px 0;
+  position: relative;
 }
 
-.hide {
-  display: none;
+.day h2 {
+  text-shadow: 1px 1px 2px rgb(253, 99, 110);
+  font-size: 3.5rem;
+  position: absolute;
+  margin: 0;
+  bottom: 10px;;
+  right:10px;
+  font-weight:600;
+}
+
+.spin {
+  font-size: 1.8rem;
+  padding: 40px 80px 50px;
 }

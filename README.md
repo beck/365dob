@@ -30,3 +30,9 @@
   npm install -g http-server
   http-server public
   ```
+
+1. Live reload:
+  ```
+  npm install -g livereload
+  livereload public
+  ```

@@ -5,21 +5,16 @@
     <title>365 Days of Babes</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="jspm_packages/system.js"></script>
+    <script src="jspm_packages/bower/webcomponentsjs@0.7.21/webcomponents-lite.js"></script>
     <link rel="stylesheet" href="jspm_packages/bower/skeleton@2.0.4/css/normalize.css">
     <link rel="stylesheet" href="jspm_packages/bower/skeleton@2.0.4/css/skeleton.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="import" href="calendar-of-babes.html">
   </head>
   <body>
     <div class="container">
       <h1>365 Days of Babes</h1>
-      <div class="images" id="instafeed">
-        <div id="gettoken-wrap" class="hide">
-          <a class="button button-primary" id="gettoken">Grant 365dob instagram access</a>
-        </div>
-        <div id="load-more-wrap" class="hide">
-          <button class="button-primary" id="load-more">Load More</button>
-        </div>
-      </div>
+      <calendar-of-babes></calendar-of-babes>
     </div>
     <script src='config.js'></script>
     <script>
