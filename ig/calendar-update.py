@@ -87,8 +87,19 @@ class Calendar(object):
     def add(self, media, tag):
         self.days[tag].append(Media.to_dict(media))
 
+    def reversed_sorted(self):
+        sorted_days = []
+        for day in reversed(sorted(self.days.keys())):
+            num = day.strip('day')
+            sorted_days.append({
+                'num': num,
+                'images': self.days[day]
+            })
+        return sorted_days
+
     def to_str(self):
-        return json.dumps(self.days, indent=2, sort_keys=True)
+        calendar = {'days': self.reversed_sorted()}
+        return json.dumps(calendar, indent=2, sort_keys=True)
 
     @classmethod
     def update(cls):
