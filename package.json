@@ -7,8 +7,8 @@
       "baseURL": "public"
     },
     "dependencies": {
-      "jwarning/json-xhr-promise": "github:jwarning/json-xhr-promise@master",
-      "skeleton": "github:dhg/Skeleton@^2.0.4"
+      "json-xhr-promise": "github:jwarning/json-xhr-promise@master",
+      "skeleton": "bower:skeleton@^2.0.4",
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

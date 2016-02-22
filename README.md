@@ -18,8 +18,10 @@
 
 1. Install app deps:
   ```
-  npm install
-  $(npm bin)/jspm install
+  npm install -g jspm
+  npm install -g jspm-bower-endpoint
+  jspm registry create bower jspm-bower-endpoint
+  jspm install
   ```
 
 
