@@ -1,6 +1,10 @@
 {
   "devDependencies": {
-    "jspm": "^0.16.23"
+    "gulp-htmlprocessor": "^0.1.1",
+    "jspm": "^0.16.23",
+    "rimraf": "^2.5.2",
+    "systemjs-builder": "^0.15.9",
+    "vinyl-fs": "^2.3.1"
   },
   "jspm": {
     "directories": {
@@ -8,6 +12,7 @@
     },
     "dependencies": {
       "json-xhr-promise": "github:jwarning/json-xhr-promise@master",
+      "normalize.css": "npm:normalize.css@^3.0.3",
       "polymer": "bower:polymer@^1.2.4",
       "skeleton": "bower:skeleton@^2.0.4",
       "webcomponentsjs": "bower:webcomponentsjs@^0.7.21"

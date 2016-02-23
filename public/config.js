@@ -20,6 +20,7 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "json-xhr-promise": "github:jwarning/json-xhr-promise@master",
     "jwarning/json-xhr-promise": "github:jwarning/json-xhr-promise@master",
+    "normalize.css": "npm:normalize.css@3.0.3",
     "polymer": "bower:polymer@1.2.4",
     "skeleton": "bower:skeleton@2.0.4",
     "webcomponentsjs": "bower:webcomponentsjs@0.7.21",

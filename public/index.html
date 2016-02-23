@@ -4,10 +4,15 @@
     <meta charset='utf-8'>
     <title>365 Days of Babes</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="jspm_packages/system.js"></script>
+    <!-- build:js //cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.21/webcomponents-lite.min.js -->
     <script src="jspm_packages/bower/webcomponentsjs@0.7.21/webcomponents-lite.js"></script>
-    <link rel="stylesheet" href="jspm_packages/bower/skeleton@2.0.4/css/normalize.css">
+    <!--/build-->
+    <!-- build:css //cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css -->
+    <link rel="stylesheet" href="jspm_packages/npm/normalize.css@3.0.3/normalize.css">
+    <!--/build-->
+    <!-- build:css //cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css -->
     <link rel="stylesheet" href="jspm_packages/bower/skeleton@2.0.4/css/skeleton.css">
+    <!--/build-->
     <link rel="stylesheet" href="style/style.css">
     <link rel="import" href="calendar-of-babes.html">
   </head>
@@ -16,9 +21,12 @@
       <h1>365 Days of Babes</h1>
       <calendar-of-babes></calendar-of-babes>
     </div>
+    <!-- build:js bundle.js -->
+    <script src="jspm_packages/system.js"></script>
     <script src='config.js'></script>
     <script>
       System.import('main');
     </script>
+    <!--/build-->
   </body>
 </html>
