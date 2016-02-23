@@ -14,8 +14,7 @@ builder.buildStatic('main.js', 'build/bundle.js');
 
 vfs.src([
     'public/*.{txt,ico}',
-    'public/style*/**/*',
-    'public/components*/*'])
+    'public/style*/**/*'])
   .pipe(vfs.dest('build'));
 
 vfs.src('public/*.html')
