@@ -39,8 +39,8 @@ a img {
   border-radius: 4px;
   display: inline-block;
   background: #57474B;
-  height: 150px;
   width: 150px;
+  height: 150px;
   font-size: 3rem;
   text-align: right;
   vertical-align:top;
@@ -57,7 +57,6 @@ a img {
   right:10px;
   font-weight:600;
 }
-
 
 /* http://tobiasahlin.com/spinkit/ */
 .spin {
@@ -99,5 +98,23 @@ a img {
   } 40% {
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
+  }
+}
+
+/* iphone 5 */
+@media (max-width: 320px) {
+  .spin {
+    padding: 40px 100px;
+  }
+  .day {
+    width: 128px;
+    height: 128px;
+  }
+  .day h2 {
+    font-size: 3.2rem;
+  }
+  a img {
+    height: 128px;
+    width: 128px;
   }
 }
