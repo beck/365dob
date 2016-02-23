@@ -13,7 +13,7 @@ rimraf.sync('build');
 builder.buildStatic('main.js', 'build/bundle.js');
 
 vfs.src([
-    'public/*.txt',
+    'public/*.{txt,ico}',
     'public/style*/**/*',
     'public/components*/*'])
   .pipe(vfs.dest('build'));

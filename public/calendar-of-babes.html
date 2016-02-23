@@ -5,7 +5,9 @@
 <dom-module id="calendar-of-babes">
   <template>
     <template is="dom-if" if="{{!days.length}}">
-        <div class="spin">Loading...</div>
+      <div class="spin">
+        <div class="b1"></div><div class="b2"></div><div class="b3"></div>
+      </div>
     </template>
     <template is="dom-repeat" items="{{days}}">
         <div class="day"><h2>#day{{item.num}}</h2></div>
