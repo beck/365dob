@@ -1,12 +1,23 @@
-# 365dob
+# 365 Days of Babes
 
-## Getting started
+A calendar project.
+
+This is the source for:  
+http://www.365daysofbabes.com/
+
+To join in, take a picture every day of your babe. Tag it with both
+`#365dob` and today's day number, eg `#day21`.
+
+Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
+
+
+## Development
 
 1. Config the instagram api:
 
   * `cp ig/api.config.sample.cson ig/api.config.cson`
   * Add an [access token](https://api.instagram.com/oauth/authorize/?client_id=bd819b765410490f8503a4558d7a8186&redirect_uri=http://www.365daysofbabes.com&response_type=token&scope=public_content).
-  * Add to the [client secret](https://www.instagram.com/developer/clients/manage/).
+  * Add the [client secret](https://www.instagram.com/developer/clients/manage/).
 
 
 1. Create `public/calendar.json`:
