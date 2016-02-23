@@ -47,3 +47,11 @@ Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
   npm install -g livereload
   livereload public
   ```
+
+## Build
+
+Knockout all the systemjs. Replace local libs with public cdn.
+
+1. Run `./build.js`
+
+1. Verify `http-server build`
