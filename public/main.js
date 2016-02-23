@@ -1,4 +1,7 @@
 /* jslint esversion:6 */
-
 import App from 'app';
-new App();
+
+window.addEventListener('HTMLImportsLoaded', function() {
+  'use strict';
+  new App();
+});
