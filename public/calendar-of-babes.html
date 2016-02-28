@@ -2,14 +2,13 @@
 <link rel="import" href="/jspm_packages/bower/polymer@1.2.4/polymer.html">
 <!--/build-->
 <link rel="import" href="calendar-day.html">
+<link rel="import" href="components/x-spinner.html">
 
 <dom-module id="calendar-of-babes">
 
   <template>
     <template is="dom-if" if="{{!days.length}}">
-      <div class="spin">
-        <div class="b1"></div><div class="b2"></div><div class="b3"></div>
-      </div>
+      <x-spinner></x-spinner>
     </template>
     <template is="dom-repeat" items="{{days}}">
       <calendar-day num="{{item.num}}" images="{{item.images}}" is-today="{{isToday(item)}}"></calendar-day>

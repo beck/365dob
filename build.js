@@ -24,6 +24,6 @@ vfs.src([
     'public/style*/**/*'])
   .pipe(vfs.dest('build'));
 
-vfs.src('public/*.html')
+vfs.src(['public/*.html', 'public/components*/*.html'])
   .pipe(htmlprocessor())
   .pipe(vfs.dest('build'));
