@@ -118,3 +118,16 @@ a img {
     width: 128px;
   }
 }
+
+.hide {
+  display: none;
+}
+
+#not-supported {
+  color: white;
+  box-shadow: 1px 1px 5px rgba(87, 71, 75, 0.5);
+  background: #ff7982;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 0;
+}

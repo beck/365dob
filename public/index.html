@@ -19,12 +19,20 @@
   <body>
     <div class="container">
       <h1>365 Days of Babes</h1>
-      <calendar-of-babes></calendar-of-babes>
+      <calendar-of-babes class="hide"></calendar-of-babes>
+      <div id="not-supported">
+        Oops, something went wrong.<br>
+        Looks like your browser is not supported.
+      </div>
     </div>
     <!-- build:js bundle.js -->
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
     <script src="dev.js"></script>
     <!--/build-->
+    <script>
+      document.querySelector('#not-supported').className = 'hide';
+      document.querySelector('calendar-of-babes').className = '';
+    </script>
   </body>
 </html>
