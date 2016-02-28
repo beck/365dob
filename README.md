@@ -52,6 +52,18 @@ Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
 
 Knockout all the systemjs. Replace local libs with public cdn.
 
+1. (optional) Install deps locally:
+  ```
+  npm install
+  npm install jspm
+  npm install jspm-bower-endpoint
+  $(npm bin)/jspm registry create bower jspm-bower-endpoint
+  $(npm bin)/jspm install
+  virtualenv venv
+  source venv/bin/activate
+  pip install -r ig/requirements.txt
+  ```
+
 1. Run `./build.js`
 
 1. Verify `http-server build`

@@ -2,6 +2,8 @@ bower_components
 build
 jspm_packages
 node_modules
+venv
+virtualenv
 
 api.config.cson
 calendar.json
