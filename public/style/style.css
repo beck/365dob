@@ -26,12 +26,7 @@ h1 {
   color: white;
   font-weight:800;
   text-shadow: 3px 3px #ff7982;
-}
-
-a img {
-  float:left;
-  border-radius: 4px;
-  margin: 0 8px 8px 0;
+  line-height: 1;
 }
 
 .day {
@@ -56,6 +51,50 @@ a img {
   bottom: 10px;
   right:10px;
   font-weight:600;
+}
+
+.post {
+  float: left;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  margin: 0 8px 8px 0;
+}
+
+.post:hover {
+  cursor: pointer;
+}
+
+.post img {
+  float: left;
+}
+
+.post .author {
+  color: white;
+  text-shadow: 1px 1px 3px rgb(253, 99, 110);
+  font-size: 120%;
+  display: inline-block;
+  background: rgba(87, 71, 75, .75);
+  position: absolute;
+  bottom: 0;
+  line-height: 20px;
+  width: 100%;
+  right: 0;
+  text-align: right;
+  margin-bottom: -32px;
+  transition-duration: 0.3s;
+}
+
+.post:hover .author {
+  transform: translateY(-100%);
+  transition-duration: 0.3s;
+}
+
+.post .author i {
+  display: inline-block;
+  padding: 6px 2px;
 }
 
 /* http://tobiasahlin.com/spinkit/ */
@@ -113,7 +152,7 @@ a img {
   .day h2 {
     font-size: 3.2rem;
   }
-  a img {
+  .post {
     height: 128px;
     width: 128px;
   }

@@ -1,0 +1,33 @@
+<!-- build:[href] lib/polymer.html -->
+<link rel="import" href="/jspm_packages/bower/polymer@1.2.4/polymer.html">
+<!--/build-->
+
+<dom-module id="calendar-day">
+
+  <template>
+    <div class="day"><h2>#day{{num}}</h2></div>
+    <template is="dom-repeat" items="{{images}}">
+      <a href="{{item.link}}" class="post" target="blank">
+        <img src="{{item.image.thumbnail.url}}">
+        <span class="author"><i>@{{item.author}}<i></span>
+      </a>
+    </template>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'calendar-day',
+      properties: {
+        images: {
+          type: Array,
+          value: [],
+        },
+        num: {
+          type: Number,
+          value: null,
+        },
+      },
+    });
+  </script>
+
+</dom-module>

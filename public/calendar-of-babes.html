@@ -1,8 +1,10 @@
 <!-- build:[href] lib/polymer.html -->
 <link rel="import" href="/jspm_packages/bower/polymer@1.2.4/polymer.html">
 <!--/build-->
+<link rel="import" href="calendar-day.html">
 
 <dom-module id="calendar-of-babes">
+
   <template>
     <template is="dom-if" if="{{!days.length}}">
       <div class="spin">
@@ -10,22 +12,20 @@
       </div>
     </template>
     <template is="dom-repeat" items="{{days}}">
-        <div class="day"><h2>#day{{item.num}}</h2></div>
-        <template is="dom-repeat" items="{{item.images}}">
-          <a href="{{item.link}}"><img src="{{item.image.thumbnail.url}}"></a>
-        </template>
+      <calendar-day num="{{item.num}}" images="{{item.images}}"></calendar-day>
     </template>
   </template>
-</dom-module>
 
-<script>
-Polymer({
-  is: 'calendar-of-babes',
-  properties: {
-    days: {
-      type: Array,
-      value: [],
+  <script>
+  Polymer({
+    is: 'calendar-of-babes',
+    properties: {
+      days: {
+        type: Array,
+        value: [],
+      },
     },
-  },
-});
-</script>
+  });
+  </script>
+
+</dom-module>
