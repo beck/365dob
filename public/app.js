@@ -5,11 +5,47 @@ import jsonXHR from 'json-xhr-promise';
 class App {
 
   constructor() {
-    jsonXHR('GET', 'calendar.json').then(calendar => this.display(calendar));
+    let today = this.getToday();
+    jsonXHR('GET', 'calendar.json')
+      .then(calendar => this.popFuture(calendar, today))
+      .then(calendar => this.ensureToday(calendar, today))
+      .then(calendar => this.display(calendar, today));
   }
 
-  display(calendar) {
-    document.querySelector('calendar-of-babes').days = calendar.days;
+  popFuture(calendar, today) {
+    for (let day of calendar.days) {
+      if(day.num > today) {
+        calendar.days.shift();
+      }
+    }
+    return calendar;
+  }
+
+  ensureToday(calendar, today) {
+    let first = calendar.days[0];
+    if(first.num === today) {
+      return;
+    }
+    let dayForToday = {
+      num: today,
+      images: [],
+    };
+    calendar.days.unshift(dayForToday);
+    return calendar;
+  }
+
+  display(calendar, today) {
+    let el = document.querySelector('calendar-of-babes');
+    el.days = calendar.days;
+    el.today = today;
+  }
+
+  getToday() {
+    let now = new Date();
+    let start = new Date(now.getFullYear(), 0, 0);
+    let diff = now - start;
+    let oneDay = 1000 * 60 * 60 * 24;
+    return Math.floor(diff / oneDay);
   }
 
 }

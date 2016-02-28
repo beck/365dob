@@ -12,17 +12,24 @@
       </div>
     </template>
     <template is="dom-repeat" items="{{days}}">
-      <calendar-day num="{{item.num}}" images="{{item.images}}"></calendar-day>
+      <calendar-day num="{{item.num}}" images="{{item.images}}" is-today="{{isToday(item)}}"></calendar-day>
     </template>
   </template>
 
   <script>
   Polymer({
     is: 'calendar-of-babes',
+    isToday: function(day) {
+      return day.num === this.today;
+    },
     properties: {
       days: {
         type: Array,
         value: [],
+      },
+      today: {
+        type: Number,
+        value: null,
       },
     },
   });

@@ -43,10 +43,16 @@ h1 {
   position: relative;
 }
 
+.day .content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px 8px;
+}
+
 .day h2 {
   text-shadow: 1px 1px 2px rgb(253, 99, 110);
   font-size: 3.5rem;
-  position: absolute;
   margin: 0;
   bottom: 10px;
   right:10px;
@@ -89,12 +95,17 @@ h1 {
 
 .post:hover .author {
   transform: translateY(-100%);
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
 }
 
 .post .author i {
   display: inline-block;
   padding: 6px 2px;
+}
+
+.day p {
+  line-height: 1.2;
+  margin: 0;
 }
 
 /* http://tobiasahlin.com/spinkit/ */

@@ -90,7 +90,7 @@ class Calendar(object):
     def reversed_sorted(self):
         sorted_days = []
         for day in reversed(sorted(self.days.keys())):
-            num = day.strip('day')
+            num = int(day.strip('day'))
             sorted_days.append({
                 'num': num,
                 'images': self.days[day]

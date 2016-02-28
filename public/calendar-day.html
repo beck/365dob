@@ -5,7 +5,16 @@
 <dom-module id="calendar-day">
 
   <template>
-    <div class="day"><h2>#day{{num}}</h2></div>
+
+    <div class="day today">
+      <div class="content">
+        <h2>
+          <template is="dom-if" if="{{isToday}}">Today </template>
+          #day{{num}}
+        </h2>
+      </div>
+    </div>
+
     <template is="dom-repeat" items="{{images}}">
       <a href="{{item.link}}" class="post" target="blank">
         <img src="{{item.image.thumbnail.url}}">
@@ -18,6 +27,10 @@
     Polymer({
       is: 'calendar-day',
       properties: {
+        isToday: {
+          type: Boolean,
+          value: false,
+        },
         images: {
           type: Array,
           value: [],
