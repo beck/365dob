@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "gulp-htmlprocessor": "^0.1.1",
+    "gulp-rename": "^1.2.2",
     "jspm": "^0.16.23",
     "rimraf": "^2.5.2",
     "systemjs-builder": "^0.15.9",
