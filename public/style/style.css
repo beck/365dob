@@ -27,6 +27,7 @@ h1 {
   font-weight:800;
   text-shadow: 3px 3px #ff7982;
   line-height: 1;
+  margin-bottom: 0;
 }
 
 .day {
@@ -79,7 +80,7 @@ h1 {
 
 .post .author {
   color: white;
-  text-shadow: 1px 1px 3px rgb(253, 99, 110);
+  text-shadow: 1px 1px 2px rgba(252, 98, 109, 0.6);
   font-size: 120%;
   display: inline-block;
   background: rgba(87, 71, 75, .75);
@@ -137,4 +138,17 @@ h1 {
   border-radius: 6px;
   padding: 20px;
   margin: 0;
+}
+
+.join {
+  font-size: 2.2rem;
+  color: white;
+  margin: 0;
+  padding: 2px 0 10px;
+  text-shadow: 2px 2px 1px #ff7982;
+  line-height: 1.1;
+}
+
+.join b {
+  font-size: 2.5rem;
 }

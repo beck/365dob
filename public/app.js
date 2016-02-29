@@ -6,6 +6,7 @@ class App {
 
   constructor() {
     let today = this.getToday();
+    document.querySelector('#join-day').innerHTML = `#day${today}`;
     jsonXHR('GET', 'calendar.json')
       .then(calendar => this.popFuture(calendar, today))
       .then(calendar => this.ensureToday(calendar, today))
