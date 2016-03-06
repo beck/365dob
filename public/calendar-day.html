@@ -17,8 +17,8 @@
 
     <template is="dom-repeat" items="{{images}}">
       <a href="{{item.link}}" class="post" target="blank">
-        <img src="{{item.image.thumbnail.url}}">
         <span class="author"><i>@{{item.author}}<i></span>
+        <img src="{{item.thumb}}">
       </a>
     </template>
   </template>
