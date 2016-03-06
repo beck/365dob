@@ -1,7 +1,0 @@
-python-cson
-python-slugify
-
-# ig's client is broken for sandboxed users
-# there are a ton of ignored pulls, this one merges:
-# https://github.com/Instagram/python-instagram/pull/215
--e git+https://github.com/beck/python-instagram.git#egg=python-instagram

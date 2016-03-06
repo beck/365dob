@@ -22,10 +22,8 @@ Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
 
 1. Create `public/calendar.json`:
   ```
-  pip install -r ig/requirements.txt
-  ig/calendar-update.py
+  curl http://www.365daysofbabes.com/calendar.json -o public/calendar.json
   ```
-
 
 1. Install app deps:
   ```
@@ -59,9 +57,6 @@ Knockout all the systemjs. Replace local libs with public cdn.
   npm install jspm-bower-endpoint
   $(npm bin)/jspm registry create bower jspm-bower-endpoint
   $(npm bin)/jspm install
-  virtualenv venv
-  source venv/bin/activate
-  pip install -r ig/requirements.txt
   ```
 
 1. Run `./build.js`
