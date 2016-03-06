@@ -37,13 +37,13 @@ Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
 1. Run server:
   ```
   npm install -g http-server
-  http-server public
+  npm start
   ```
 
 1. Live reload:
   ```
   npm install -g livereload
-  livereload public
+  npm run watch
   ```
 
 ## Build
@@ -59,6 +59,6 @@ Knockout all the systemjs. Replace local libs with public cdn.
   $(npm bin)/jspm install
   ```
 
-1. Run `./build.js`
+1. Build: `npm run build`
 
-1. Verify `http-server build`
+1. Verify: `npm run start-build`
