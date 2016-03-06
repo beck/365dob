@@ -17,8 +17,10 @@
 
     <template is="dom-repeat" items="{{images}}">
       <a href="{{item.link}}" class="post" target="blank">
-        <span class="author"><i>@{{item.author}}<i></span>
         <img src="{{item.thumb}}">
+        <span class="author">
+          <i class$="{{styleIt(item.author)}}">@{{item.author}}</i>
+        </span>
       </a>
     </template>
   </template>
@@ -26,6 +28,9 @@
   <script>
     Polymer({
       is: 'calendar-day',
+      styleIt: (str) => {
+        return (str.length > 13) ? 'long' : 'norm';
+      },
       properties: {
         isToday: {
           type: Boolean,

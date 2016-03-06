@@ -94,6 +94,10 @@ h1 {
   transition-duration: 0.3s;
 }
 
+.post .author .long {
+  font-size: 75%;
+}
+
 .post:hover .author {
   transform: translateY(-100%);
   transition-duration: 0.1s;
@@ -101,7 +105,7 @@ h1 {
 
 .post .author i {
   display: inline-block;
-  padding: 6px 2px;
+  padding: 6px 4px;
 }
 
 .day p {
