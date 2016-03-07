@@ -25,7 +25,7 @@ class App {
   ensureToday(calendar, today) {
     let first = calendar.days[0];
     if(first.num === today) {
-      return;
+      return calendar;
     }
     let dayForToday = {
       num: today,
