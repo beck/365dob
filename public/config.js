@@ -24,6 +24,7 @@ System.config({
     "polymer": "bower:polymer@1.2.4",
     "skeleton": "bower:skeleton@2.0.4",
     "webcomponentsjs": "bower:webcomponentsjs@0.7.21",
+    "whatwg-fetch": "bower:whatwg-fetch@1.0.0",
     "bower:polymer@1.2.4": {
       "webcomponentsjs": "bower:webcomponentsjs@0.7.21"
     },

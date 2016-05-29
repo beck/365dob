@@ -21,12 +21,10 @@ Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
 1. Install app deps:
   ```
   npm install
-  npm install -g jspm
-  npm install -g jspm-bower-endpoint
+  # with ./node_modules/bin on PATH
   jspm registry create bower jspm-bower-endpoint
   jspm install
   ```
-
 
 1. Run server:
   ```
@@ -40,18 +38,10 @@ Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
   npm run watch
   ```
 
+
 ## Build
 
-Knockout all the systemjs. Replace local libs with public cdn.
-
-1. (optional) Install deps locally:
-  ```
-  npm install
-  npm install jspm
-  npm install jspm-bower-endpoint
-  $(npm bin)/jspm registry create bower jspm-bower-endpoint
-  $(npm bin)/jspm install
-  ```
+The build knocks out all the systemjs and replaces local libs with public cdn.
 
 1. Build: `npm run build`
 
