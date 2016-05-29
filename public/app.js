@@ -1,13 +1,12 @@
 /*jslint esversion: 6 */
 
-import jsonXHR from 'json-xhr-promise';
-
 class App {
 
   constructor() {
     let today = this.getToday();
     document.querySelector('#join-day').innerHTML = `#day${today}`;
-    jsonXHR('GET', 'calendar.json')
+    fetch('calendar.json')
+      .then(r => r.json())
       .then(calendar => this.popFuture(calendar, today))
       .then(calendar => this.ensureToday(calendar, today))
       .then(calendar => this.display(calendar, today));

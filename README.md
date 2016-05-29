@@ -20,6 +20,7 @@ Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
 
 1. Install app deps:
   ```
+  npm install
   npm install -g jspm
   npm install -g jspm-bower-endpoint
   jspm registry create bower jspm-bower-endpoint

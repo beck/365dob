@@ -12,7 +12,6 @@
       "baseURL": "public"
     },
     "dependencies": {
-      "json-xhr-promise": "github:jwarning/json-xhr-promise@master",
       "normalize.css": "npm:normalize.css@^3.0.3",
       "polymer": "bower:polymer@^1.2.4",
       "skeleton": "bower:skeleton@^2.0.4",
