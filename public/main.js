@@ -1,8 +1,7 @@
-/* jslint esversion:6 */
-import 'whatwg-fetch';
-import App from 'app';
+import 'whatwg-fetch'; // eslint-disable-line
 
-window.addEventListener('HTMLImportsLoaded', function() {
-  'use strict';
-  new App();
+import app from './app';
+
+window.addEventListener('HTMLImportsLoaded', () => {
+  app.loadCalendar();
 });

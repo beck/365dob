@@ -28,9 +28,7 @@
   <script>
     Polymer({
       is: 'calendar-day',
-      styleIt: (str) => {
-        return (str.length > 13) ? 'long' : 'norm';
-      },
+      styleIt: (str) => (str.length > 13 ? 'long' : 'norm'),
       properties: {
         isToday: {
           type: Boolean,
