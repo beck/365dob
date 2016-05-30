@@ -45,4 +45,4 @@ The build knocks out all the systemjs and replaces local libs with public cdn.
 
 1. Build: `npm run build`
 
-1. Verify: `npm run start-build`
+1. Verify: `http-server build`

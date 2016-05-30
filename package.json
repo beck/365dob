@@ -34,7 +34,6 @@
   "scripts": {
     "build": "./build.js",
     "start": "http-server public",
-    "start-build": "http-server build",
     "watch": "livereload public"
   }
 }
