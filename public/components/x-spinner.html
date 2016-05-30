@@ -4,7 +4,7 @@
 
 <dom-module id="x-spinner">
   <template>
-    <div class="spin">
+    <div class="spin" id="spinner">
       <div class="b1"></div><div class="b2"></div><div class="b3"></div>
     </div>
   </template>
@@ -16,10 +16,17 @@
 
 <style>
   /* http://tobiasahlin.com/spinkit/ */
+  x-spinner {
+    display:block;
+    widht: 100%;
+    padding: 30px;
+    clear:both;
+  }
+
   .spin {
-    padding: 50px 150px;
+    clear: both;
     width: 70px;
-    text-align: center;
+    margin: 0 auto;
   }
 
   .spin > div {

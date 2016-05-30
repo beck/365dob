@@ -7,13 +7,15 @@
 <dom-module id="calendar-of-babes">
 
   <template>
-    <template is="dom-if" if="{{!days.length}}">
-      <x-spinner></x-spinner>
-    </template>
     <template is="dom-repeat" items="{{days}}">
       <calendar-day num="{{item.num}}" images="{{item.images}}" is-today="{{isToday(item)}}"></calendar-day>
     </template>
+    <template is="dom-if" if="{{spin}}">
+      <x-spinner></x-spinner>
+    </template>
   </template>
+
+
 
   <script>
   Polymer({
@@ -21,8 +23,21 @@
     isToday: function(day) {
       return day.num === this.today;
     },
+    pop: function() {
+      const cnt = 20;
+      this.days = this.days.concat(this.queue.slice(0, cnt));
+      this.queue = this.queue.slice(cnt);
+    },
     properties: {
+      spin: {
+        type: Boolean,
+        value: true,
+      },
       days: {
+        type: Array,
+        value: [],
+      },
+      queue: {
         type: Array,
         value: [],
       },
@@ -32,6 +47,9 @@
       },
     },
   });
+
+
+
   </script>
 
 </dom-module>

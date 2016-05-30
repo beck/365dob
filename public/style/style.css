@@ -12,6 +12,7 @@ calendar-of-babes {
   background: #ff7982;
   border-radius: 6px;
   line-height: 0;
+  width: 100%;
   max-width: 316px;
 }
 

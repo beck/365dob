@@ -1,3 +1,5 @@
+import paginate from './paginate';
+
 const today = (() => {
   const now = new Date();
   const start = new Date(now.getFullYear(), 0, 0);
@@ -22,7 +24,7 @@ function ensureToday(days) {
 function display(calendar) {
   document.querySelector('#join-day').innerHTML = `#day${today}`;
   const el = document.querySelector('calendar-of-babes');
-  el.days = calendar.days;
+  el.queue = calendar.days;
   el.today = today;
 }
 
@@ -37,7 +39,8 @@ function loadCalendar() {
   fetch('calendar.json')
     .then(r => r.json())
     .then(cleanupDays)
-    .then(display);
+    .then(display)
+    .then(paginate);
 }
 
 export default { loadCalendar };
