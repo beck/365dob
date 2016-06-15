@@ -1,0 +1,5 @@
+<filesMatch "\.(html|js|css|json)$">
+  Header unset ETag
+  Header unset Expires
+  Header set Cache-Control "no-cache, no-store"
+</filesMatch>

@@ -19,6 +19,7 @@ vfs.src(['public/**/polymer*.html'])
 
 vfs.src(
   [
+    'public/.htaccess',
     'public/*.{txt,ico,json}',
     'public/style*/**/*'])
   .pipe(vfs.dest('build'));
