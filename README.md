@@ -1,12 +1,9 @@
 # 365 Days of Babes
 
-A calendar project.
+A 2016 calendar project.
 
 This is the source for:  
 http://www.365daysofbabes.com/
-
-To join in, take a picture every day of your babe. Tag it with both
-`#365dob` and today's day number, eg `#day21`.
 
 Original idea by [pawsnopaws](https://www.instagram.com/pawsnopaws/).
 

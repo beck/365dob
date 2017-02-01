@@ -9,7 +9,6 @@
     <div class="day today">
       <div class="content">
         <h2>
-          <template is="dom-if" if="{{isToday}}">Today </template>
           #day{{num}}
         </h2>
       </div>
@@ -30,10 +29,6 @@
       is: 'calendar-day',
       styleIt: (str) => (str.length > 13 ? 'long' : 'norm'),
       properties: {
-        isToday: {
-          type: Boolean,
-          value: false,
-        },
         images: {
           type: Array,
           value: [],
